@@ -1,0 +1,145 @@
+<!-- HTML code for PAT {Project Assignment & Tracking} -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Project Assignment & Tracking</title>
+    <link rel="stylesheet" href="PATstyle.css">
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <div class="header-content">
+            <h1>Project Assignment & Tracking</h1>
+            <p>Your solution for effortless project management and collaboration.</p>
+        </div>
+    </header>
+
+    <!-- Navbar -->
+    <nav class="navbar">
+        <div class="logo">
+            <a href="#">ProjectTracker</a>
+        </div>
+        <ul class="nav-links">
+            <li><a href="#hero">Home</a></li>
+            <li><a href="#features">Features</a></li>
+            <li><a href="#track-progress">Track Progress</a></li>
+            <li><a href="#foster-collaboration">Collaboration</a></li>
+            <li><a href="#assign-project">Assign Project</a></li>
+        </ul>
+        <div class="menu-icon" id="menu-icon">
+            <span>&#9776;</span>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="hero" class="hero">
+        <div class="hero-text">
+            <h1>Welcome to Project Assignment & Tracking</h1>
+            <p>Assign projects, track progress, and foster collaboration effectively.</p>
+            <a href="#features">Get Started</a>
+        </div>
+        <div class="hero-img">
+            <img src="Project-removebg-preview.png" alt="Hero Image">
+        </div>
+    </section>
+
+    <!-- Features Section -->
+    <section id="features" class="features">
+        <h2>Our Features</h2>
+        <div class="feature-container">
+            <div class="feature-card">
+                <h3>Assign Projects</h3>
+                <p>Effortlessly assign projects to your team and track their progress.</p>
+            </div>
+            <div class="feature-card">
+                <h3>Track Progress</h3>
+                <p>Monitor real-time project updates and ensure your deadlines are met.</p>
+            </div>
+            <div class="feature-card">
+                <h3>Collaborate</h3>
+                <p>Foster collaboration between senior and junior developers through milestones.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Assign New Project Section -->
+    <section id="assign-project" class="assign-project">
+        <h2>📝 Assign a New Project</h2>
+        <form class="project-form">
+            <div class="form-group">
+                <label for="project-name">Project Name:</label>
+                <input type="text" id="project-name" name="project-name" placeholder="Enter project name" required>
+            </div>
+            <div class="form-group">
+                <label for="project-description">Project Description:</label>
+                <textarea id="project-description" name="project-description" placeholder="Enter project description" rows="4" required></textarea>
+            </div>
+            <div class="form-group">
+                <label for="project-deadline">Project Deadline:</label>
+                <input type="date" id="project-deadline" name="project-deadline" required>
+            </div>
+            <div class="form-group">
+                <label for="team-members">Assign Team Members:</label>
+                <input type="text" id="team-members" name="team-members" placeholder="Enter team members" required>
+            </div>
+            <button type="submit" class="submit-btn">Assign Project</button>
+        </form>
+    </section>
+
+    <!-- Track Progress Section -->
+    <section id="track-progress" class="track-progress">
+        <div class="track-header">
+            <h2>📊 Track Progress in Real-Time</h2>
+            <p>Monitor project updates intuitively and stay on top of deadlines.</p>
+        </div>
+        <div class="progress-container">
+            <div class="progress-card">
+                <h3>Project A</h3>
+                <p><strong>Status:</strong> In Progress</p>
+                <div class="progress-bar-container">
+                    <div class="progress-bar" style="width: 70%;"></div>
+                </div>
+                <span>70% Completed</span>
+            </div>
+            <div class="progress-card">
+                <h3>Project B</h3>
+                <p><strong>Status:</strong> Pending</p>
+                <div class="progress-bar-container">
+                    <div class="progress-bar" style="width: 40%;"></div>
+                </div>
+                <span>40% Completed</span>
+            </div>
+        </div>
+    </section>
+
+    <!-- Foster Collaboration Section -->
+    <section id="foster-collaboration" class="foster-collaboration">
+        <h2>🤝 Foster Collaboration</h2>
+        <div class="collaboration-container">
+            <div class="collaboration-card">
+                <h3>Milestone 1: Planning</h3>
+                <p>Assigned by: <strong>Senior Developer</strong></p>
+                <p>Status: <span class="status ongoing">Ongoing</span></p>
+            </div>
+            <div class="collaboration-card">
+                <h3>Milestone 2: Prototype</h3>
+                <p>Assigned by: <strong>Junior Developer</strong></p>
+                <p>Status: <span class="status completed">Completed</span></p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="footer-content">
+            <p>&copy; 2024 ProjectTracker. All rights reserved.</p>
+            <p>Contact us: <a href="mailto:contact@projecttracker.com">contact@projecttracker.com</a></p>
+        </div>
+    </footer>
+
+    <script src="PATscript.js"></script>
+</body>
+</html>
