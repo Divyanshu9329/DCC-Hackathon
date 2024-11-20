@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Enhanced Leaderboard</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <!-- Header Section -->
+        <header>
+            <h1>🏆 Dynamic Leaderboard System 🏆</h1>
+            <div class="theme-toggle">
+                <label for="theme-switch">Light Mode</label>
+                <input type="checkbox" id="theme-switch">
+                <label for="theme-switch">Dark Mode</label>
+            </div>
+        </header>
+
+        <!-- Leaderboard Search -->
+        <section class="search-bar">
+            <input type="text" id="search-input" placeholder="Search Player...">
+        </section>
+
+        <!-- Leaderboard Section -->
+        <section class="leaderboard">
+            <h2>Leaderboard</h2>
+            <div id="leaderboard-container" class="leaderboard-grid">
+                <!-- Dynamic leaderboard rows will be inserted here -->
+            </div>
+            <p class="live-update">LIVE UPDATE</p>
+        </section>
+
+        <!-- Featured Reviews Section -->
+        <section class="featured-reviews">
+            <h2>Highlighted Reviews</h2>
+            <div id="featured-reviews-container">
+                <!-- Dynamic featured review cards will be inserted here -->
+            </div>
+        </section>
+
+        <!-- Peer Review Section -->
+        <section class="peer-review">
+            <h2>All Peer Reviews</h2>
+            <div id="reviews-container">
+                <!-- Dynamic review cards will be inserted here -->
+            </div>
+            <p class="live-update">LIVE UPDATE</p>
+        </section>
+
+        <!-- Admin Input Section -->
+        <section class="admin-input">
+            <h2>Add or Update Performance Metrics</h2>
+            <form id="update-form">
+                <input type="text" id="player-name" placeholder="Player Name" required>
+                <input type="url" id="player-avatar" placeholder="Avatar URL (optional)">
+                <input type="number" id="player-score" placeholder="Score" required>
+                <input type="number" id="player-stars" placeholder="Stars (1-5)" min="1" max="5" required>
+                <textarea id="review-text" placeholder="Review Text (optional)" rows="3"></textarea>
+                <button type="submit">Update Leaderboard</button>
+            </form>
+        </section>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

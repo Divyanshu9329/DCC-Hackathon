@@ -1,0 +1,146 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap");
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: "Poppins", sans-serif;
+        }
+
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            background: linear-gradient(135deg, #1e90ff, #ff7f50);
+            background-size: 400% 400%;
+            animation: gradient-animation 8s ease infinite;
+        }
+
+        @keyframes gradient-animation {
+            0% { background-position: 0% 50%; }
+            50% { background-position: 100% 50%; }
+            100% { background-position: 0% 50%; }
+        }
+
+        .wrapper {
+            width: 420px;
+            background: rgba(255, 255, 255, 0.1);
+            border: 2px solid rgba(255, 255, 255, 0.3);
+            backdrop-filter: blur(15px);
+            box-shadow: 0 8px 32px rgba(0, 0, 0, 0.2);
+            border-radius: 10px;
+            padding: 30px;
+            animation: fadeIn 1.5s ease;
+        }
+
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+                transform: scale(0.95);
+            }
+            to {
+                opacity: 1;
+                transform: scale(1);
+            }
+        }
+
+        .wrapper h1 {
+            font-size: 36px;
+            text-align: center;
+            color: #fff;
+            margin-bottom: 20px;
+        }
+
+        .input-box {
+            position: relative;
+            width: 100%;
+            margin: 20px 0;
+        }
+
+        .input-box input,
+        .input-box select {
+            width: 100%;
+            padding: 15px 20px;
+            background: rgba(255, 255, 255, 0.1);
+            border: 2px solid rgba(255, 255, 255, 0.3);
+            border-radius: 30px;
+            color: #fff;
+            font-size: 16px;
+            outline: none;
+            transition: 0.3s;
+        }
+
+        .input-box input:hover,
+        .input-box select:hover {
+            border-color: #1e90ff;
+            background: rgba(255, 255, 255, 0.2);
+        }
+
+        .input-box i {
+            position: absolute;
+            right: 20px;
+            top: 50%;
+            transform: translateY(-50%);
+            color: #fff;
+            font-size: 20px;
+        }
+
+        .remember-forgot {
+            display: flex;
+            justify-content: space-between;
+            color: #fff;
+            font-size: 14px;
+            margin: 10px 0;
+        }
+
+        .remember-forgot label input {
+            accent-color: #1e90ff;
+            margin-right: 10px;
+        }
+
+        .remember-forgot a {
+            color: #fff;
+            text-decoration: none;
+            transition: color 0.3s;
+        }
+
+        .remember-forgot a:hover {
+            color: #ff7f50;
+        }
+
+        .btn {
+            width: 100%;
+            padding: 15px;
+            border: none;
+            border-radius: 30px;
+            background: linear-gradient(90deg, #1e90ff, #ff7f50);
+            color: #fff;
+            font-size: 16px;
+            font-weight: 600;
+            cursor: pointer;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+            transition: transform 0.2s, background 0.5s;
+        }
+
+        .btn:hover {
+            transform: scale(1.05);
+            background: linear-gradient(90deg, #ff7f50, #1e90ff);
+        }
+
+        .register-link {
+            text-align: center;
+            color: #fff;
+            margin-top: 15px;
+        }
+
+        .register-link p a {
+            color: #1e90ff;
+            text-decoration: none;
+            font-weight: 600;
+            transition: color 0.3s;
+        }
+
+        .register-link p a:hover {
+            color: #ff7f50;
+        }
